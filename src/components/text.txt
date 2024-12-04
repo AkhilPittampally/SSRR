@@ -1,0 +1,27 @@
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import './components.css'
+
+const Gallery = () => {
+  return (
+    <div>
+      <Header />
+      <div className="gallery">
+        <div className="photo"><img src="src/assets/sunrise.jpeg" alt="Photo 1" /></div>
+        <div className="photo"><img src="src/assets/sunset.jpeg" alt="Photo 2" /></div>
+        <div className="photo"><img src="src/assets/night.jpeg" alt="Photo 3" /></div>
+      </div>
+
+      <div className="gallery">
+        <div className="photo"><img src="src/assets/ganesh.jpeg" alt="Photo 4" /></div>
+        <div className="photo"><img src="src/Assets/telescope.jpeg" alt="Photo 5" /></div>
+        <div className="photo"><img src="src/Assets/balcony.jpeg" alt="Photo 6" /></div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Gallery;
